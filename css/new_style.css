@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
 body {
   background-color: #212121;
-  color: #ebeae9; }
+  color: #ebeae9;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
