@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+body {
+  background-color: #212121;
+  color: #ebeae9; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  padding: 60px 0 40px;
+  font: 900 48px/48px "Fira Mono"; }
+  @media (max-width: 576px) {
+    h1 {
+      padding: 30px 0 20px;
+      font: 900 36px/36px "Fira Mono"; } }
+
+.data {
+  font: 400 14px/14px "Comfortaa";
+  color: #757575;
+  padding: 0 10px 18px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin: 0 10px 0;
+  transition: 1s; }
+  .data:first-of-type {
+    margin-left: 0; }
+  .data:last-of-type {
+    margin-right: 0; }
+  .data::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ebeae9;
+    transition: 1s; }
+  .data:hover {
+    text-decoration: none;
+    color: #ebeae9; }
+    .data:hover::before {
+      width: 100%; }
+  .data.active {
+    color: #ebeae9; }
+    .data.active::before {
+      width: 100%; }
+  @media (max-width: 576px) {
+    .data {
+      padding: 0 5px 10px;
+      margin: 0;
+      font-size: 13px; } }
+  @media (max-width: 360px) {
+    .data {
+      margin-bottom: 10px;
+      font-size: 12px; } }
+
+.bar {
+  display: none; }
+  .bar.open {
+    display: block; }
+  .bar .row {
+    justify-content: center;
+    padding-top: 60px;
+    position: relative; }
+    @media (max-width: 576px) {
+      .bar .row {
+        padding-top: 30px; } }
+    .bar .row .info {
+      margin-bottom: 60px; }
+      @media (max-width: 576px) {
+        .bar .row .info {
+          content: none; } }
+      @media (max-width: 360px) {
+        .bar .row .info {
+          margin-bottom: 40px; } }
+      .bar .row .info .film {
+        color: #ebeae9;
+        display: block;
+        position: relative;
+        padding-top: 20px;
+        transition: 1s; }
+        @media (max-width: 576px) {
+          .bar .row .info .film {
+            text-align: center; } }
+        .bar .row .info .film::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 100%;
+          background-color: #ebeae9;
+          transition: 1s; }
+          @media (max-width: 576px) {
+            .bar .row .info .film::before {
+              left: 50%;
+              transform: translateX(-50%);
+              width: 80%; } }
+        .bar .row .info .film::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 0;
+          width: 1px;
+          background-color: #ebeae9;
+          transition: 1s; }
+          @media (max-width: 576px) {
+            .bar .row .info .film::after {
+              content: none; } }
+        .bar .row .info .film img {
+          max-width: 293px;
+          width: 100%;
+          margin-bottom: 30px; }
+          @media (max-width: 1200px) {
+            .bar .row .info .film img {
+              max-width: 220px; } }
+          @media (max-width: 576px) {
+            .bar .row .info .film img {
+              max-width: 260px; } }
+        .bar .row .info .film h2 {
+          font: 900 30px/30px "Fira Mono";
+          margin-bottom: 64px; }
+          @media (max-width: 1200px) {
+            .bar .row .info .film h2 {
+              margin-bottom: 100px; } }
+          @media (max-width: 576px) {
+            .bar .row .info .film h2 {
+              margin-bottom: 60px;
+              font-size: 24px; } }
+          @media (max-width: 576px) {
+            .bar .row .info .film h2 {
+              font: 900 20px/20px "Fira Mono"; } }
+          @media (max-width: 320px) {
+            .bar .row .info .film h2 {
+              margin-bottom: 20px; } }
+        .bar .row .info .film:hover {
+          padding-left: 40px; }
+          .bar .row .info .film:hover::before {
+            width: 80%; }
+          .bar .row .info .film:hover::after {
+            height: 240px; }
+      .bar .row .info .times {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap; }
+        @media (max-width: 576px) {
+          .bar .row .info .times {
+            justify-content: center;
+            width: 100%; } }
+        .bar .row .info .times .time {
+          padding: 7px 10px;
+          border: 1px solid #757575;
+          color: #757575;
+          font: 400 18px/18px "Comfortaa";
+          margin: 0 10px;
+          transition: 1s; }
+          @media (max-width: 1200px) {
+            .bar .row .info .times .time:nth-child(4), .bar .row .info .times .time:first-of-type {
+              margin-left: 0; }
+            .bar .row .info .times .time:nth-child(3), .bar .row .info .times .time:last-of-type {
+              margin-right: 0; } }
+          @media (max-width: 576px) {
+            .bar .row .info .times .time:nth-child(4), .bar .row .info .times .time:nth-child(3) {
+              margin: 0 10px 10px; } }
+          @media (max-width: 1200px) {
+            .bar .row .info .times .time {
+              margin-bottom: 10px; } }
+          .bar .row .info .times .time:hover {
+            border: 1px solid #ebeae9;
+            color: #ebeae9; }
+        @media (max-width: 320px) {
+          .bar .row .info .times {
+            position: relative; } }
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative; }
+  @media (max-width: 360px) {
+    footer {
+      padding-top: 30px;
+      margin-bottom: 30px; } }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      footer::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      footer::before {
+        width: 100%;
+        left: 0; } }
+  footer h2 {
+    font: 900 18px/18px "Fira Mono";
+    margin: 0 0 16px; }
+  footer p {
+    font: 400 14px/14px "Comfortaa";
+    margin-bottom: 60px; }
+  footer .alina {
+    padding: 30px 15px 0;
+    justify-content: center; }
+    footer .alina a {
+      font: 400 11px/11px "Comfortaa";
+      position: relative;
+      padding-right: 40px;
+      margin-left: 30px;
+      color: #ebeae9; }
+      footer .alina a::before {
+        content: '\f0e0';
+        font: 900 24px/11px "Font Awesome\ 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ebeae9;
+        transition: 1s; }
+      footer .alina a:hover::before {
+        content: '\f2b6';
+        color: #F44336; }
+    footer .alina p {
+      font: 400 11px/11px "Comfortaa";
+      margin-bottom: 0;
+      margin-right: 30px; }
+    @media (max-width: 376px) {
+      footer .alina {
+        flex-wrap: wrap; }
+        footer .alina p {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 15px; }
+        footer .alina a {
+          margin-left: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0; } }
+@media (max-width: 768px) {
+  .container {
+    width: 86%; } }
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=new_style.css.map */

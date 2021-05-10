@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+body {
+  background-color: #212121;
+  color: #ebeae9; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  padding: 60px 0 40px;
+  font: 900 48px/48px "Fira Mono"; }
+  @media (max-width: 576px) {
+    h1 {
+      padding: 30px 0 20px;
+      font: 900 36px/36px "Fira Mono"; } }
+
+.container .row {
+  justify-content: center;
+  position: relative; }
+  @media (max-width: 576px) {
+    .container .row {
+      padding-top: 30px; } }
+  .container .row .info {
+    margin-bottom: 60px; }
+    @media (max-width: 576px) {
+      .container .row .info {
+        content: none; } }
+    @media (max-width: 360px) {
+      .container .row .info {
+        margin-bottom: 40px; } }
+    .container .row .info .film {
+      color: #ebeae9;
+      display: block;
+      position: relative;
+      padding-top: 20px;
+      transition: 1s; }
+      @media (max-width: 576px) {
+        .container .row .info .film {
+          text-align: center; } }
+      .container .row .info .film::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #ebeae9;
+        transition: 1s; }
+        @media (max-width: 576px) {
+          .container .row .info .film::before {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%; } }
+      .container .row .info .film::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 1px;
+        background-color: #ebeae9;
+        transition: 1s; }
+        @media (max-width: 576px) {
+          .container .row .info .film::after {
+            content: none; } }
+      .container .row .info .film img {
+        max-width: 293px;
+        width: 100%;
+        margin-bottom: 30px; }
+        @media (max-width: 1200px) {
+          .container .row .info .film img {
+            max-width: 220px; } }
+        @media (max-width: 576px) {
+          .container .row .info .film img {
+            max-width: 260px; } }
+      .container .row .info .film h2 {
+        font: 900 24px/26px "Fira Mono";
+        max-width: 250px; }
+        @media (max-width: 576px) {
+          .container .row .info .film h2 {
+            margin-bottom: 60px;
+            font-size: 24px; } }
+        @media (max-width: 576px) {
+          .container .row .info .film h2 {
+            font: 900 20px/20px "Fira Mono";
+            margin: auto; } }
+        @media (max-width: 320px) {
+          .container .row .info .film h2 {
+            margin-bottom: 20px; } }
+      .container .row .info .film:hover {
+        padding-left: 40px; }
+        .container .row .info .film:hover::before {
+          width: 80%; }
+        .container .row .info .film:hover::after {
+          height: 240px; }
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative; }
+  @media (max-width: 360px) {
+    footer {
+      padding-top: 30px;
+      margin-bottom: 30px; } }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      footer::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      footer::before {
+        width: 100%;
+        left: 0; } }
+  footer h2 {
+    font: 900 18px/18px "Fira Mono";
+    margin: 0 0 16px; }
+  footer p {
+    font: 400 14px/14px "Comfortaa";
+    margin-bottom: 60px; }
+  footer .alina {
+    padding: 30px 15px 0;
+    justify-content: center; }
+    footer .alina a {
+      font: 400 11px/11px "Comfortaa";
+      position: relative;
+      padding-right: 40px;
+      margin-left: 30px;
+      color: #ebeae9; }
+      footer .alina a::before {
+        content: '\f0e0';
+        font: 900 24px/11px "Font Awesome\ 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ebeae9;
+        transition: 1s; }
+      footer .alina a:hover::before {
+        content: '\f2b6';
+        color: #F44336; }
+    footer .alina p {
+      font: 400 11px/11px "Comfortaa";
+      margin-bottom: 0;
+      margin-right: 30px; }
+    @media (max-width: 376px) {
+      footer .alina {
+        flex-wrap: wrap; }
+        footer .alina p {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 15px; }
+        footer .alina a {
+          margin-left: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0; } }
+@media (max-width: 768px) {
+  .container {
+    width: 86%; } }
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=soon_style.css.map */

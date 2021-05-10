@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Скоро у прокаті</title>
+    <link rel="icon" href="images/palladium_icon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu_style.css">
+    <link rel="stylesheet" href="css/soon_style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<header class="main">
+    <div class="main__sidebar">
+        <div class="main__sidebar-wrap">
+            <div class="main__sidebar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main__hide hide">
+                <span>+</span>
+            </div>
+            <a class="main__sidebar-img" id="open_search">
+                <img src="images/search-solid.png" alt="search">
+            </a>
+            <a class="main__sidebar-logo" href="main.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu hide">
+            <ul class="menu__box">
+                <li><a class="menu__item" href="now.html">Зараз у кiно</a></li>
+                <li><a class="menu__item" href="soon.html">Скоро у прокатi</a></li>
+                <li><a class="menu__item" href="shares.html">Акції</a></li>
+                <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="menu__img">
+                <div class="menu__img-fb">
+                    <a href="https://www.facebook.com/PalladiumCinema"><img src="images/facebook.png" alt="fb"></a>
+                </div>
+                <div class="menu__img-inst">
+                    <a href="https://www.instagram.com/palladiumcinema/"><img src="images/inst.png" alt="inst"></a>
+                </div>
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+
+</header>
+<div class="search_open" id="search_opened">
+    <form>
+        <input type="search" placeholder="Пошук" aria-label="Поиск">
+        <button type="submit"><i class="fas fa-search"></i></button>
+        <svg id="close_search" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+    </form>
+</div>
+<div class="container">
+    <h1>Скоро у прокаті</h1>
+    <div class="row">
+        <div class="info col-12 col-sm-6 col-lg-4">
+            <a href="godzilla_soon.html" class="film">
+                <img src="images/gadzila.png">
+                <h2>Годзілла проти Конга</h2>
+            </a>
+        </div>
+        <div class="info col-12 col-sm-6 col-lg-4">
+            <a href="hansel_soon.html" class="film">
+                <img src="images/secret.png">
+                <h2>Ганзель, Гретель і Агентство Магії</h2>
+            </a>
+        </div>
+        <div class="info col-12 col-sm-6 col-lg-4">
+            <a href="nomads_soon.html" class="film">
+                <img src="images/nomarland.png">
+                <h2>Земля кочівників</h2>
+            </a>
+        </div>
+    </div>
+
+</div>
+<footer class="container">
+    <h2>Palladium Cinema</h2>
+    <p>Ви завжди в головній ролі!</p>
+    <div class="alina row">
+        <p>Сайт розроблений MyshavovaCom</p>
+        <a href="mailto:myshakova1alina@hneu.net">Для зв`язку</a>
+    </div>
+</footer>
+<script>
+    jQuery(document).ready(function($) {
+        $(function() {
+            $('.data').on('click', function(e) {
+                e.preventDefault();
+                $('.bar').each(function() {
+                    $(this).css('display', 'none');
+                });
+                let block = $(this).attr('href');
+                $(block).css('display', 'block');
+                $('.data').each(function() {
+                    $(this).removeClass('active');
+                });
+                $(this).addClass('active');
+            });
+        });
+        $('#act_video').click(function(){
+            $(this).toggleClass('non_active');
+            $(".img_video").toggleClass('non_active');
+            $(".you_video").toggleClass('active_video');
+        });
+        $(function() {
+            $('#open_search').on('click', function(e) {
+                e.preventDefault();
+                $('#search_opened').addClass('active');
+
+            });
+            $('#close_search').on('click', function(e) {
+                e.preventDefault();
+                $('#search_opened').removeClass('active');
+            });
+        });
+    });
+</script>
+<script src="js/menu.js"></script>
+</body>
+</html>

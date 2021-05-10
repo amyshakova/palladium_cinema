@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+body {
+  background-color: #212121;
+  color: #ebeae9; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  font: 900 48px/48px "Fira Mono";
+  padding-bottom: 30px;
+  width: 100%;
+  position: relative; }
+  h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebeae9;
+    bottom: 0;
+    left: 0; }
+  @media (max-width: 576px) {
+    h1 {
+      font: 900 36px/36px "Fira Mono"; } }
+
+.title {
+  margin-bottom: 30px; }
+  .title .left_item img {
+    display: block;
+    width: 100%; }
+    @media (max-width: 576px) {
+      .title .left_item img {
+        width: 40%;
+        margin: auto; } }
+  @media (max-width: 576px) {
+    .title .left_item {
+      order: 2; } }
+  .title .right_item {
+    padding-top: 60px;
+    text-align: right; }
+    .title .right_item p {
+      margin-top: 30px;
+      font: 900 14px/22px "Comfortaa";
+      color: #ebeae9; }
+      .title .right_item p span {
+        color: #757575; }
+    @media (max-width: 576px) {
+      .title .right_item {
+        order: 1;
+        text-align: left;
+        padding-top: 30px; } }
+
+.film_description {
+  font: 400 16px/20px "Comfortaa";
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px; }
+  .film_description::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebeae9;
+    bottom: 0;
+    left: 0; }
+  @media (max-width: 576px) {
+    .film_description {
+      font-size: 14px; } }
+
+.data {
+  font: 400 14px/14px "Comfortaa";
+  color: #757575;
+  padding: 0 10px 18px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin: 0 10px 30px;
+  transition: 1s; }
+  .data:first-of-type {
+    margin-left: 0; }
+  .data:last-of-type {
+    margin-right: 0; }
+  .data::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ebeae9;
+    transition: 1s; }
+  .data:hover {
+    text-decoration: none;
+    color: #ebeae9; }
+    .data:hover::before {
+      width: 100%; }
+  .data.active {
+    color: #ebeae9; }
+    .data.active::before {
+      width: 100%; }
+  @media (max-width: 576px) {
+    .data {
+      padding: 0 5px 10px;
+      margin: 0 0 20px;
+      font-size: 12px; } }
+
+.bar {
+  display: none;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px; }
+  .bar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebeae9;
+    bottom: 0;
+    left: 0; }
+  .bar.open {
+    display: block; }
+
+.times {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 576px) {
+    .times {
+      justify-content: center;
+      width: 100%; } }
+  .times .time {
+    padding: 7px 10px;
+    border: 1px solid #757575;
+    color: #757575;
+    font: 400 18px/18px "Comfortaa";
+    margin: 0 10px;
+    transition: 1s; }
+    .times .time:first-of-type {
+      margin-left: 0; }
+    .times .time:last-of-type {
+      margin-right: 0; }
+    .times .time:hover {
+      border: 1px solid #ebeae9;
+      color: #ebeae9; }
+    @media (max-width: 450px) {
+      .times .time {
+        margin-bottom: 10px; }
+        .times .time:first-of-type {
+          margin-left: 10px; }
+        .times .time:last-of-type {
+          margin-right: 10px; } }
+
+.video {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 390px;
+  position: relative; }
+  .video img {
+    width: 100%;
+    display: block; }
+    .video img.non_active {
+      display: none; }
+  .video svg {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    color: #ebeae9;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    border-radius: 50%;
+    opacity: 80%;
+    transition: 1s; }
+    .video svg.non_active {
+      display: none; }
+    .video svg:hover {
+      opacity: 100%;
+      transition: 1s;
+      width: 105px;
+      height: 105px; }
+    @media (max-width: 576px) {
+      .video svg {
+        width: 50px;
+        height: 50px; } }
+  .video iframe {
+    display: none;
+    width: 100%;
+    height: 100%; }
+    .video iframe.active_video {
+      display: block; }
+  @media (max-width: 1200px) {
+    .video {
+      height: 315px; } }
+  @media (max-width: 992px) {
+    .video {
+      height: 300px; } }
+  @media (max-width: 768px) {
+    .video {
+      height: 220px; } }
+  @media (max-width: 576px) {
+    .video {
+      height: 180px;
+      margin-bottom: 30px; } }
+  @media (max-width: 450px) {
+    .video {
+      height: 135px; } }
+  @media (max-width: 320px) {
+    .video {
+      height: 100px; } }
+
+.also {
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-bottom: 0; }
+  .also::before {
+    content: none; }
+  @media (max-width: 450px) {
+    .also {
+      text-align: center; } }
+  @media (max-width: 320px) {
+    .also {
+      font-size: 32px; } }
+
+.also_all {
+  justify-content: space-between;
+  margin-bottom: 60px; }
+  .also_all .also_films .also_film {
+    display: block;
+    padding-top: 20px;
+    position: relative; }
+    .also_all .also_films .also_film::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ebeae9;
+      top: 0;
+      left: 0;
+      transition: 1s; }
+    .also_all .also_films .also_film::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 0;
+      background-color: #ebeae9;
+      top: 0;
+      left: 0;
+      transition: 1s; }
+    .also_all .also_films .also_film img {
+      width: 234px;
+      display: block;
+      margin-bottom: 20px;
+      transition: 1s; }
+      @media (max-width: 1200px) {
+        .also_all .also_films .also_film img {
+          width: 180px; } }
+      @media (max-width: 768px) {
+        .also_all .also_films .also_film img {
+          width: 220px; } }
+    .also_all .also_films .also_film h2 {
+      font: 900 18px/18px "Fira Mono";
+      text-decoration: none;
+      transition: 1s;
+      color: #ebeae9; }
+    .also_all .also_films .also_film:hover::before {
+      width: 225px; }
+    .also_all .also_films .also_film:hover::after {
+      height: 225px; }
+    .also_all .also_films .also_film:hover img, .also_all .also_films .also_film:hover h2 {
+      margin-left: 20px; }
+  @media (max-width: 450px) {
+    .also_all .also_films {
+      max-width: 100%;
+      margin-bottom: 15px; } }
+  @media (max-width: 576px) {
+    .also_all {
+      margin-bottom: 30px; } }
+  @media (max-width: 450px) {
+    .also_all {
+      justify-content: center; } }
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative; }
+  @media (max-width: 360px) {
+    footer {
+      padding-top: 30px;
+      margin-bottom: 30px; } }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      footer::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      footer::before {
+        width: 100%;
+        left: 0; } }
+  footer h2 {
+    font: 900 18px/18px "Fira Mono";
+    margin: 0 0 16px; }
+  footer p {
+    font: 400 14px/14px "Comfortaa";
+    margin-bottom: 60px; }
+  footer .alina {
+    padding: 30px 15px 0;
+    justify-content: center; }
+    footer .alina a {
+      font: 400 11px/11px "Comfortaa";
+      position: relative;
+      padding-right: 40px;
+      margin-left: 30px;
+      color: #ebeae9; }
+      footer .alina a::before {
+        content: '\f0e0';
+        font: 900 24px/11px "Font Awesome\ 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ebeae9;
+        transition: 1s; }
+      footer .alina a:hover::before {
+        content: '\f2b6';
+        color: #F44336; }
+    footer .alina p {
+      font: 400 11px/11px "Comfortaa";
+      margin-bottom: 0;
+      margin-right: 30px; }
+    @media (max-width: 376px) {
+      footer .alina {
+        flex-wrap: wrap; }
+        footer .alina p {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 15px; }
+        footer .alina a {
+          margin-left: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0; } }
+@media (max-width: 768px) {
+  .container {
+    width: 86%; } }
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=film.css.map */

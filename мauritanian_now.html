@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мавританец у Pallladium Cinems</title>
+    <link rel="icon" href="images/palladium_icon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu_style.css">
+    <link rel="stylesheet" href="css/film.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!--    <script src="bootstrap/bootstrap.bundle.min.js"></script>-->
+</head>
+<body onload="initElement();">
+<header class="main">
+    <div class="main__sidebar">
+        <div class="main__sidebar-wrap">
+            <div class="main__sidebar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main__hide hide">
+                <span>+</span>
+            </div>
+            <a class="main__sidebar-img" id="open_search">
+                <img src="images/search-solid.png" alt="search">
+            </a>
+            <a class="main__sidebar-logo" href="main.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu hide">
+            <ul class="menu__box">
+                <li><a class="menu__item" href="now.html">Зараз у кiно</a></li>
+                <li><a class="menu__item" href="soon.html">Скоро у прокатi</a></li>
+                <li><a class="menu__item" href="shares.html">Акції</a></li>
+                <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="menu__img">
+                <div class="menu__img-fb">
+                    <a href="https://www.facebook.com/PalladiumCinema"><img src="images/facebook.png" alt="fb"></a>
+                </div>
+                <div class="menu__img-inst">
+                    <a href="https://www.instagram.com/palladiumcinema/"><img src="images/inst.png" alt="inst"></a>
+                </div>
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+
+</header>
+<div class="search_open" id="search_opened">
+    <form>
+        <input type="search" placeholder="Пошук" aria-label="Поиск">
+        <button type="submit"><i class="fas fa-search"></i></button>
+        <svg id="close_search" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+    </form>
+</div>
+<section class="container">
+    <div class="title row">
+        <div class="left_item col-12 col-md-6 col-lg-4">
+            <img src="images/poster3.jpg">
+        </div>
+        <div class="right_item col-12 offset-lg-1 col-md-6 col-lg-7">
+            <h1>Мавританец</h1>
+            <p>
+                Вік: 16+<br>
+                Рік: <span>2021</span><br>
+                Оригінальна назва: <span>The Mauritanian</span><br>
+                Режисер: <span>Кевін Макдональд</span><br>
+                Рейтинг Imdb: <span>7.4</span><br>
+                Мова: Українська мова<br>
+                Жанр: Трилер, Драма<br>
+                Тривалість: <span>129 хвилин</span><br>
+                Виробництво: <span>Великобританія, США</span><br>
+                У головних ролях: Джоді Фостер, Тахар Рахім, Закарі Лівай, Шейлін Вудлі, Бенедикт Камбербетч
+            </p>
+        </div>
+    </div>
+    <p class="film_description">Реальна історія в'язня Гуантанамо, який провів за гратами 14 років. У центрі сюжету маврітанець Мохаммед Ульд Слахі (Тагарі Рагим). Влада США підозрює його у вербуванні терористів під час терактів 11 вересня. Без офіційних звинувачень і можливості захисту в суді, Слахі відправляють до в'язниці. Тільки через 6 років він отримує право на адвоката, і в боротьбу проти урядової машини вступають адвокат Ненсі Голландер (Джоді Фостер) і її помічниця Террі Дункан (Вудлі). Завдяки їх титанічній праці вдасться розкрити шокуючу правду і довести, що людський дух не стримають жодні ґрати. Фільм заснований на автобіографічній книзі «Щоденник Гуантанамо».
+    </p>
+    <a href="#div1" class="data active"></a>
+    <a href="#div2" class="data"></a>
+    <a href="#div3" class="data"></a>
+    <a href="#div4" class="data"></a>
+    <div class="bar open" id="div1">
+        <div class="times">
+            <a href="tickets.html" class="time">16:22</a>
+            <a href="tickets.html" class="time">16:55</a>
+            <a href="tickets.html" class="time">17:50</a>
+            <a href="tickets.html" class="time">20:45</a>
+            <a href="tickets.html" class="time">22:00</a>
+            <a href="tickets.html" class="time">23:00</a>
+        </div>
+    </div>
+    <div class="bar" id="div2">
+        <div class="times">
+            <a href="tickets.html" class="time">15:20</a>
+            <a href="tickets.html" class="time">16:20</a>
+            <a href="tickets.html" class="time">18:50</a>
+            <a href="tickets.html" class="time">20:20</a>
+            <a href="tickets.html" class="time">22:40</a>
+        </div>
+    </div>
+    <div class="bar" id="div3">
+        <div class="times">
+            <a href="tickets.html" class="time">16:10</a>
+            <a href="tickets.html" class="time">17:30</a>
+            <a href="tickets.html" class="time">18:30</a>
+            <a href="tickets.html" class="time">20:45</a>
+            <a href="tickets.html" class="time">22:00</a>
+            <a href="tickets.html" class="time">23:15</a>
+        </div>
+    </div>
+    <div class="bar" id="div4">
+        <div class="times">
+            <a href="tickets.html" class="time">17:00</a>
+            <a href="tickets.html" class="time">19:20</a>
+            <a href="tickets.html" class="time">21:40</a>
+            <a href="tickets.html" class="time">23:00</a>
+        </div>
+    </div>
+    <div class="video">
+        <img class="img_video" src="images/mauritanian.png">
+        <svg id="act_video" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+        <iframe class="you_video" src="https://www.youtube.com/embed/UNQ_W8m-nCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <h1 class="also">Дивіться також</h1>
+    <div class="row also_all">
+        <div class="also_films col-6 col-lg-3">
+            <a href="swindler_now.html" class="also_film">
+                <img src="images/poster2.jpg">
+                <h2>Аферистка</h2>
+            </a>
+        </div>
+        <div class="also_films col-6 col-lg-3">
+            <a href="scam_now.html" class="also_film">
+                <img src="images/poster1.jpg">
+                <h2>Афера Олівера Твіста</h2>
+            </a>
+        </div>
+        <div class="also_films col-6 col-lg-3">
+            <a href="raya_now.html" class="also_film">
+                <img src="images/raya.png">
+                <h2>Рая і останній дракон</h2>
+            </a>
+        </div>
+        <div class="also_films col-6 col-lg-3">
+            <a href="saying_now.html" class="also_film">
+                <img src="images/vesilla.png">
+                <h2>Скажене весілля 3</h2>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="container">
+    <h2>Palladium Cinema</h2>
+    <p>Ви завжди в головній ролі!</p>
+    <div class="alina row">
+        <p>Сайт розроблений MyshavovaCom</p>
+        <a href="mailto:myshakova1alina@hneu.net">Для зв`язку</a>
+    </div>
+</footer>
+<script src="js/menu.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $(function() {
+            $('.data').on('click', function(e) {
+                e.preventDefault();
+                $('.bar').each(function() {
+                    $(this).css('display', 'none');
+                });
+                let block = $(this).attr('href');
+                $(block).css('display', 'block');
+                $('.data').each(function() {
+                    $(this).removeClass('active');
+                });
+                $(this).addClass('active');
+            });
+        });
+        $('#act_video').click(function(){
+            $(this).toggleClass('non_active');
+            $(".img_video").toggleClass('non_active');
+            $(".you_video").toggleClass('active_video');
+        });
+        $(function() {
+            $('#open_search').on('click', function(e) {
+                e.preventDefault();
+                $('#search_opened').addClass('active');
+
+            });
+            $('#close_search').on('click', function(e) {
+                e.preventDefault();
+                $('#search_opened').removeClass('active');
+            });
+        });
+    });
+</script>
+<script src="js/data_now.js"></script>
+<script>
+    {
+        function initElement() {
+            let times = document.querySelectorAll('.time');
+            times.forEach((value)=>{
+                value.onclick = showAlert;
+            })
+        }
+        function showAlert(event) {
+            let time = this.textContent
+            sessionStorage.setItem('time', time)
+            document.location.href = "in2.html"
+        }
+    }
+</script>
+</body>
+</html>

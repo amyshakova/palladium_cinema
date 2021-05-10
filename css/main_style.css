@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+body {
+  background-color: #212121;
+  color: #ebeae9; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  padding: 60px 0 40px;
+  font: 900 48px/48px "Fira Mono"; }
+  @media (max-width: 576px) {
+    h1 {
+      padding: 30px 0 20px;
+      font: 900 36px/36px "Fira Mono"; } }
+
+.video {
+  display: none; }
+
+.video.active {
+  display: block; }
+
+.carousel {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  margin-left: 165px; }
+  @media (max-width: 1024px) {
+    .carousel {
+      height: auto; } }
+  @media (max-width: 768px) {
+    .carousel {
+      height: auto; } }
+  @media (max-width: 736px) {
+    .carousel {
+      margin-left: 0; } }
+
+.owl-carousel .owl-item {
+  color: #ebeae9;
+  position: relative; }
+  @media (max-width: 736px) {
+    .owl-carousel .owl-item {
+      height: 100vh; } }
+  @media (max-width: 540px) {
+    .owl-carousel .owl-item {
+      height: 350px; } }
+  @media (max-width: 450px) {
+    .owl-carousel .owl-item {
+      height: auto; } }
+  .owl-carousel .owl-item .video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 750px;
+    height: 485px; }
+    @media (max-width: 1024px) {
+      .owl-carousel .owl-item .video {
+        width: 750px;
+        height: 485px; } }
+    @media (max-width: 992px) {
+      .owl-carousel .owl-item .video {
+        width: 680px;
+        height: 440px; } }
+    @media (max-width: 768px) {
+      .owl-carousel .owl-item .video {
+        height: 390px; } }
+  .owl-carousel .owl-item .right_block {
+    display: block;
+    position: absolute;
+    top: 0;
+    max-width: 750px;
+    right: 0; }
+    .owl-carousel .owl-item .right_block img {
+      width: 100%; }
+    .owl-carousel .owl-item .right_block span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 100px;
+      height: 100px;
+      color: #ebeae9;
+      background-color: #212121;
+      border-radius: 50%;
+      opacity: 80%;
+      transition: 1s; }
+      @media (max-width: 736px) {
+        .owl-carousel .owl-item .right_block span {
+          display: none; } }
+      .owl-carousel .owl-item .right_block span:hover {
+        opacity: 100%;
+        transition: 1s; }
+      .owl-carousel .owl-item .right_block span svg {
+        width: 104px;
+        position: relative;
+        left: -2px;
+        top: -2px; }
+    @media (max-width: 1024px) {
+      .owl-carousel .owl-item .right_block {
+        max-width: 750px; } }
+    @media (max-width: 992px) {
+      .owl-carousel .owl-item .right_block {
+        max-width: 736px; } }
+    @media (max-width: 450px) {
+      .owl-carousel .owl-item .right_block {
+        position: relative; } }
+  .owl-carousel .owl-item .left_block {
+    margin-top: 460px;
+    margin-bottom: 30px;
+    position: relative; }
+    @media (max-width: 1024px) {
+      .owl-carousel .owl-item .left_block {
+        margin-top: 420px; } }
+    @media (max-width: 992px) {
+      .owl-carousel .owl-item .left_block {
+        margin-top: 455px; } }
+    .owl-carousel .owl-item .left_block span {
+      font: 400 24px/24px "Comfortaa";
+      color: #ebeae9;
+      position: relative;
+      top: 7px; }
+      @media (max-width: 736px) {
+        .owl-carousel .owl-item .left_block span {
+          text-align: left;
+          font-size: 14px;
+          top: 0; } }
+    .owl-carousel .owl-item .left_block svg {
+      width: 35px;
+      margin-right: 25px; }
+      @media (max-width: 576px) {
+        .owl-carousel .owl-item .left_block svg {
+          display: none; } }
+    @media (max-width: 768px) {
+      .owl-carousel .owl-item .left_block {
+        margin-bottom: 15px; } }
+    @media (max-width: 736px) {
+      .owl-carousel .owl-item .left_block {
+        position: absolute;
+        bottom: 0;
+        background-color: #757575;
+        padding: 15px;
+        margin: 0;
+        width: 100%; } }
+    @media (max-width: 320px) {
+      .owl-carousel .owl-item .left_block {
+        padding: 5px 15px; } }
+  .owl-carousel .owl-item .left_block::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 1px;
+    top: -30px;
+    position: absolute;
+    background-color: #ebeae9; }
+    @media (max-width: 736px) {
+      .owl-carousel .owl-item .left_block::before {
+        content: none; } }
+  .owl-carousel .owl-item h2 {
+    font: 900 64px/70px "Fira Mono";
+    margin: 0; }
+    @media (max-width: 768px) {
+      .owl-carousel .owl-item h2 {
+        font: 900 40px/44px "Fira Mono"; } }
+    @media (max-width: 736px) {
+      .owl-carousel .owl-item h2 {
+        position: absolute;
+        background-color: #F44336;
+        padding: 15px;
+        bottom: 0;
+        right: 0; } }
+    @media (max-width: 450px) {
+      .owl-carousel .owl-item h2 {
+        display: none; } }
+    .owl-carousel .owl-item h2 a {
+      color: #ebeae9; }
+
+.owl-item.active .non_active {
+  display: none !important; }
+.owl-item.active .act_video.non_active {
+  display: none !important; }
+
+.owl-theme .owl-dots {
+  position: absolute;
+  top: 0;
+  left: 30%; }
+  @media (max-width: 992px) {
+    .owl-theme .owl-dots {
+      left: -30px; } }
+  @media (max-width: 768px) {
+    .owl-theme .owl-dots {
+      top: 400px;
+      left: 85%; } }
+  @media (max-width: 736px) {
+    .owl-theme .owl-dots {
+      display: none; } }
+  .owl-theme .owl-dots .owl-dot {
+    outline: none; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 15px;
+      height: 15px;
+      background: none;
+      border: 1px solid #ebeae9; }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ebeae9; }
+
+@media (max-width: 576px) {
+  .soon.container h1 {
+    padding: 40px 0 20px;
+    margin: auto;
+    text-align: center; } }
+.soon.container .row {
+  justify-content: center;
+  position: relative; }
+  .soon.container .row .info {
+    margin-bottom: 60px; }
+    @media (max-width: 576px) {
+      .soon.container .row .info {
+        content: none; } }
+    @media (max-width: 360px) {
+      .soon.container .row .info {
+        margin-bottom: 40px; } }
+    .soon.container .row .info .film {
+      color: #ebeae9;
+      display: block;
+      position: relative;
+      padding-top: 20px;
+      transition: 1s; }
+      @media (max-width: 576px) {
+        .soon.container .row .info .film {
+          text-align: center; } }
+      .soon.container .row .info .film::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #ebeae9;
+        transition: 1s; }
+        @media (max-width: 576px) {
+          .soon.container .row .info .film::before {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%; } }
+      .soon.container .row .info .film::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 1px;
+        background-color: #ebeae9;
+        transition: 1s; }
+        @media (max-width: 576px) {
+          .soon.container .row .info .film::after {
+            content: none; } }
+      .soon.container .row .info .film img {
+        max-width: 293px;
+        width: 100%;
+        margin-bottom: 30px; }
+        @media (max-width: 1200px) {
+          .soon.container .row .info .film img {
+            max-width: 220px; } }
+        @media (max-width: 576px) {
+          .soon.container .row .info .film img {
+            max-width: 260px; } }
+      .soon.container .row .info .film h2 {
+        font: 900 24px/26px "Fira Mono";
+        max-width: 250px; }
+        @media (max-width: 576px) {
+          .soon.container .row .info .film h2 {
+            font: 900 20px/20px "Fira Mono";
+            margin: auto; } }
+        @media (max-width: 320px) {
+          .soon.container .row .info .film h2 {
+            margin-bottom: 20px; } }
+      .soon.container .row .info .film:hover {
+        padding-left: 40px; }
+        .soon.container .row .info .film:hover::before {
+          width: 80%; }
+        .soon.container .row .info .film:hover::after {
+          height: 240px; }
+
+.palladium {
+  padding: 60px 0;
+  position: relative;
+  text-align: right; }
+  .palladium .row {
+    align-items: center; }
+  .palladium::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      .palladium::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      .palladium::before {
+        width: 100%;
+        left: 0; } }
+  @media (max-width: 768px) {
+    .palladium {
+      padding: 0 15px; }
+      .palladium::before {
+        content: none; } }
+  @media (max-width: 576px) {
+    .palladium {
+      margin-top: 30px; } }
+  .palladium .image_pal {
+    width: 530px;
+    position: relative; }
+    .palladium .image_pal img {
+      display: block;
+      width: 100%; }
+    .palladium .image_pal::before {
+      content: "";
+      position: absolute;
+      width: 190px;
+      height: 1px;
+      background-color: #ebeae9;
+      bottom: -30px;
+      right: -30px; }
+    .palladium .image_pal::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 190px;
+      background-color: #ebeae9;
+      bottom: -30px;
+      right: -30px; }
+    @media (max-width: 1024px) {
+      .palladium .image_pal {
+        width: 100%; }
+        .palladium .image_pal::after, .palladium .image_pal::before {
+          content: none; } }
+    @media (max-width: 768px) {
+      .palladium .image_pal {
+        margin-bottom: 30px; } }
+  .palladium h2 {
+    font: 900 48px/48px "Fira Mono";
+    margin-bottom: 60px; }
+    @media (max-width: 1024px) {
+      .palladium h2 {
+        margin-right: 15px; } }
+    @media (max-width: 576px) {
+      .palladium h2 {
+        font: 900 36px/36px "Fira Mono";
+        margin-bottom: 30px;
+        text-align: left; } }
+  .palladium p {
+    font: 300 18px/20px "Comfortaa"; }
+    @media (max-width: 1024px) {
+      .palladium p {
+        margin-right: 15px; } }
+    @media (max-width: 768px) {
+      .palladium p:last-of-type {
+        margin-bottom: 30px; } }
+    @media (max-width: 576px) {
+      .palladium p {
+        text-align: left;
+        font: 300 14px/16px "Comfortaa"; } }
+
+.map {
+  margin-bottom: 60px;
+  position: relative; }
+  @media (max-width: 576px) {
+    .map {
+      margin-bottom: 0; } }
+  .map iframe {
+    opacity: 0.3;
+    height: 550px;
+    margin-left: 90px; }
+    @media (max-width: 576px) {
+      .map iframe {
+        margin-left: 0; } }
+  .map .map__form {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ebeae9;
+    padding: 55px 35px;
+    width: 500px; }
+    .map .map__form h2 {
+      font: 900 30px/30px "Fira Mono";
+      margin: 0 0 20px;
+      width: 100%;
+      position: relative;
+      color: #212121; }
+      .map .map__form h2::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #212121;
+        top: -30px;
+        left: 0; }
+      @media (max-width: 450px) {
+        .map .map__form h2 {
+          font: 900 24px/24px "Fira Mono"; } }
+    .map .map__form input {
+      resize: none;
+      height: 50px;
+      background: none;
+      border: 1px solid #212121;
+      color: #212121;
+      padding-left: 20px;
+      display: block;
+      margin-bottom: 20px;
+      width: 320px;
+      font: 400 14px/50px "Comfortaa"; }
+      .map .map__form input::-webkit-input-placeholder {
+        color: #212121;
+        font: 400 14px/50px "Comfortaa"; }
+      .map .map__form input:hover {
+        border-color: #F44336; }
+      @media (max-width: 576px) {
+        .map .map__form input {
+          width: 100%; } }
+    .map .map__form textarea {
+      resize: none;
+      height: 160px;
+      background: none;
+      border: 1px solid #212121;
+      color: #212121;
+      padding-left: 20px;
+      padding-top: 20px;
+      display: block;
+      margin-bottom: 20px;
+      width: 320px;
+      font: 400 14px/20px "Comfortaa"; }
+      .map .map__form textarea::-webkit-input-placeholder {
+        color: #212121;
+        font: 400 14px/20px "Comfortaa"; }
+      .map .map__form textarea:hover {
+        border-color: #F44336; }
+      @media (max-width: 576px) {
+        .map .map__form textarea {
+          width: 100%; } }
+    .map .map__form button {
+      position: relative;
+      height: 50px;
+      background-color: #212121;
+      color: #ebeae9;
+      text-align: center;
+      display: block;
+      width: 320px;
+      font: 400 18px/50px "Comfortaa"; }
+      .map .map__form button:hover {
+        background-color: #F44336; }
+      @media (max-width: 576px) {
+        .map .map__form button {
+          width: 100%; } }
+      .map .map__form button::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 200px;
+        right: -100px;
+        bottom: -30px;
+        background-color: #212121; }
+        @media (max-width: 576px) {
+          .map .map__form button::before {
+            content: none; } }
+      .map .map__form button::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 1px;
+        right: -100px;
+        bottom: -30px;
+        background-color: #212121; }
+        @media (max-width: 576px) {
+          .map .map__form button::after {
+            content: none; } }
+      @media (max-width: 450px) {
+        .map .map__form button {
+          font-size: 18px; } }
+    @media (max-width: 1024px) {
+      .map .map__form {
+        left: 40%; } }
+    @media (max-width: 768px) {
+      .map .map__form {
+        left: 22%;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 30px; } }
+    @media (max-width: 576px) {
+      .map .map__form {
+        left: 0;
+        width: 100%; } }
+    @media (max-width: 450px) {
+      .map .map__form {
+        padding: 55px 25px; } }
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative; }
+  @media (max-width: 360px) {
+    footer {
+      padding-top: 30px;
+      margin-bottom: 30px; } }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      footer::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      footer::before {
+        width: 100%;
+        left: 0; } }
+  footer h2 {
+    font: 900 18px/18px "Fira Mono";
+    margin: 0 0 16px; }
+  footer p {
+    font: 400 14px/14px "Comfortaa";
+    margin-bottom: 60px; }
+  footer .alina {
+    padding: 30px 15px 0;
+    justify-content: center; }
+    footer .alina a {
+      font: 400 11px/11px "Comfortaa";
+      position: relative;
+      padding-right: 40px;
+      margin-left: 30px;
+      color: #ebeae9; }
+      footer .alina a::before {
+        content: '\f0e0';
+        font: 900 24px/11px "Font Awesome\ 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ebeae9;
+        transition: 1s; }
+      footer .alina a:hover::before {
+        content: '\f2b6';
+        color: #F44336; }
+    footer .alina p {
+      font: 400 11px/11px "Comfortaa";
+      margin-bottom: 0;
+      margin-right: 30px; }
+    @media (max-width: 376px) {
+      footer .alina {
+        flex-wrap: wrap; }
+        footer .alina p {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 15px; }
+        footer .alina a {
+          margin-left: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0; } }
+@media (max-width: 768px) {
+  .container {
+    width: 86%; } }
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+.main__info-arrow {
+  text-decoration: none; }
+  @media (max-width: 1024px) {
+    .main__info-arrow {
+      display: none; } }
+  .main__info-arrow--text {
+    margin-bottom: 10px; }
+
+@media (min-width: 1600px) {
+  .owl-carousel .owl-item .right_block {
+    max-width: 65%;
+    width: 65%; }
+  .owl-carousel .owl-item .video {
+    width: 65%;
+    height: 55%; }
+  .owl-carousel .owl-item .left_block {
+    margin-top: 40%; }
+    .owl-carousel .owl-item .left_block span {
+      font: 400 36px/36px "Comfortaa"; }
+  .owl-carousel .owl-item h2 {
+    font: 900 90px/90px "Fira Mono"; } }
+.buttom {
+  margin-left: 90px;
+  position: relative; }
+  @media (max-width: 576px) {
+    .buttom {
+      margin-left: 0; } }
+  .buttom h1 {
+    font: 900 40px/40px "Fira Mono";
+    text-align: center;
+    padding: 30px 0 30px; }
+    @media (max-width: 768px) {
+      .buttom h1 {
+        max-width: 521px;
+        margin-left: 60px; } }
+    @media (max-width: 576px) {
+      .buttom h1 {
+        font: 900 36px/36px "Fira Mono";
+        margin-left: 0; } }
+    @media (max-width: 450px) {
+      .buttom h1 {
+        font: 900 30px/36px "Fira Mono"; } }
+  .buttom .row {
+    justify-content: center; }
+    @media (max-width: 768px) {
+      .buttom .row {
+        left: -50px;
+        position: relative; } }
+    @media (max-width: 576px) {
+      .buttom .row {
+        left: 0; } }
+  .buttom .apl {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #F44336;
+    text-align: center;
+    margin: 0 30px 30px;
+    color: #F44336;
+    font: 400 30px/50px "Comfortaa";
+    transition: 1s; }
+    .buttom .apl:hover {
+      color: #ebeae9;
+      background-color: #F44336; }
+    @media (max-width: 450px) {
+      .buttom .apl {
+        margin: 0 15px 30px; } }
+  .buttom::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebeae9;
+    bottom: 0;
+    left: 0; }
+  .buttom::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebeae9;
+    top: 0;
+    left: 0; }
+
+/*# sourceMappingURL=main_style.css.map */

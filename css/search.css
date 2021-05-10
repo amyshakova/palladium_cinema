@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+.search_open {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ebeae9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .search_open.active {
+    display: block; }
+  .search_open form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .search_open form input {
+      height: 65px;
+      width: 445px;
+      background-color: #212121;
+      font: 400 26px/65px "Comfortaa";
+      text-align: center;
+      color: #ebeae9;
+      margin-right: 30px; }
+      .search_open form input::-webkit-input-placeholder {
+        font: 400 36px/65px "Comfortaa";
+        text-align: center;
+        color: #ebeae9; }
+    .search_open form button {
+      width: 65px;
+      height: 65px;
+      background-color: #212121; }
+      .search_open form button i {
+        font-size: 35px;
+        color: #ebeae9; }
+    .search_open form #close_search {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -30px;
+      right: -40px;
+      color: #212121; }
+
+/*# sourceMappingURL=search.css.map */

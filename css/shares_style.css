@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fira+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+body {
+  background-color: #212121;
+  color: #ebeae9; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  padding: 60px 0 40px;
+  font: 900 48px/48px "Fira Mono"; }
+  @media (max-width: 576px) {
+    h1 {
+      padding: 30px 0 20px;
+      font: 900 36px/36px "Fira Mono"; } }
+
+.container .image {
+  display: block;
+  position: relative; }
+  @media (max-width: 768px) {
+    .container .image {
+      margin-bottom: 20px; } }
+  .container .image::before {
+    content: "";
+    width: 635px;
+    height: 1px;
+    background-color: #ebeae9;
+    position: absolute;
+    top: -20px;
+    transition: 1s; }
+    @media (max-width: 768px) {
+      .container .image::before {
+        content: none; } }
+  .container .image::after {
+    content: "";
+    width: 1px;
+    height: 0;
+    background-color: #ebeae9;
+    position: absolute;
+    top: -20px;
+    transition: 1s; }
+    @media (max-width: 768px) {
+      .container .image::after {
+        content: none; } }
+  .container .image img {
+    width: 100%; }
+.container h2 {
+  font: 900 24px/24px "Fira Mono";
+  margin-bottom: 20px; }
+  @media (max-width: 320px) {
+    .container h2 {
+      font: 900 18px/18px "Fira Mono"; } }
+.container p {
+  font: 300 14px/18px "Comfortaa"; }
+  @media (max-width: 320px) {
+    .container p {
+      font: 300 10px/12px "Fira Mono"; } }
+.container .row {
+  margin-bottom: 60px;
+  padding-top: 20px; }
+  @media (max-width: 768px) {
+    .container .row {
+      margin-bottom: 45px;
+      padding-top: 0; } }
+  .container .row p:last-of-type {
+    margin-bottom: 0; }
+  .container .row.end {
+    align-items: flex-end; }
+    .container .row.end .image::before, .container .row.end .image::after {
+      left: 0; }
+  .container .row.start {
+    align-items: flex-start;
+    text-align: right; }
+    .container .row.start .image::before, .container .row.start .image::after {
+      right: 0; }
+    @media (max-width: 768px) {
+      .container .row.start .info {
+        order: 2; } }
+  .container .row:hover .image::before {
+    width: 570px; }
+  .container .row:hover .image::after {
+    height: 310px; }
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  position: relative; }
+  @media (max-width: 360px) {
+    footer {
+      padding-top: 30px;
+      margin-bottom: 30px; } }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 1px;
+    max-width: 1110px;
+    width: 100%;
+    background-color: #ebeae9; }
+    @media (max-width: 1200px) {
+      footer::before {
+        width: 96%; } }
+    @media (max-width: 360px) {
+      footer::before {
+        width: 100%;
+        left: 0; } }
+  footer h2 {
+    font: 900 18px/18px "Fira Mono";
+    margin: 0 0 16px; }
+  footer p {
+    font: 400 14px/14px "Comfortaa";
+    margin-bottom: 60px; }
+  footer .alina {
+    padding: 30px 15px 0;
+    justify-content: center; }
+    footer .alina a {
+      font: 400 11px/11px "Comfortaa";
+      position: relative;
+      padding-right: 40px;
+      margin-left: 30px;
+      color: #ebeae9; }
+      footer .alina a::before {
+        content: '\f0e0';
+        font: 900 24px/11px "Font Awesome\ 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ebeae9;
+        transition: 1s; }
+      footer .alina a:hover::before {
+        content: '\f2b6';
+        color: #F44336; }
+    footer .alina p {
+      font: 400 11px/11px "Comfortaa";
+      margin-bottom: 0;
+      margin-right: 30px; }
+    @media (max-width: 376px) {
+      footer .alina {
+        flex-wrap: wrap; }
+        footer .alina p {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 15px; }
+        footer .alina a {
+          margin-left: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0; } }
+@media (max-width: 768px) {
+  .container {
+    width: 86%; } }
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+/*# sourceMappingURL=shares_style.css.map */
